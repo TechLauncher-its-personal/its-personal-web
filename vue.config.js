@@ -9,14 +9,14 @@ module.exports = {
         'about': {
             entry: './src/pages/about/main.js',
             template: 'public/index.html',
-            filename: 'about',
+            filename: 'about.html',
             title: 'about',
             chunks: [ 'chunk-vendors', 'chunk-common', 'about' ]
         },
         'login': {
             entry: './src/pages/login/main.js',
             template: 'public/index.html',
-            filename: 'login',
+            filename: 'login.html',
             title: 'login',
             chunks: [ 'chunk-vendors', 'chunk-common', 'login' ]
         }
