@@ -26,11 +26,12 @@
  </header>
  
  <section id="feature">
-   <a href="contact.html"><div class="box bg-light">
+   <div class="box bg-light">
      <i class="fas fa-envelope-open-text fa-3x"></i>
      <h3>Contact us</h3>
      <p>Give your precious feedback</p>
-   </a></div>
+   </div>
+
    <div class="box bg-primary">
      <i class="fas fa-book-reader fa-3x"></i>
      <h3>Check Documents</h3>
@@ -68,7 +69,7 @@ export default{
 <style>
 /* Showcase */
 #showcase {
-    background: url('../assets/showcase.jpg') no-repeat center center/cover;
+    background: url('../../assets/showcase.jpg') no-repeat center center/cover;
     height: 800px;
 }
 
