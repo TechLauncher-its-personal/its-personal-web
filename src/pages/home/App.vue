@@ -118,6 +118,7 @@ p{
 .btn:hover{
     background: #eca072;
     color: #003366;
+    opacity: 0.9;
 
 }
 .bg-primary{
@@ -167,27 +168,24 @@ p{
 }
 
 #navbar ul li a:hover{
-    background:#45a9e6;
-    color:#eca072;
+    border-bottom:#eca072 2px solid;
 }
 
-body{
-    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 10px;
-    background-color: #ebebeb;
-}
 
 /* Showcase */
 #showcase {
     background: url('../../assets/showcase.jpg') no-repeat center center/cover;
     height: 800px;
+    position:relative;
+    
 }
 
 #showcase .showcase-content {
     color: #003366;
     text-align: center;
     padding-top: 170px;
-}
+ 
+}    
 
 #showcase .showcase-content h1,h2{
     font-size: 60px;
