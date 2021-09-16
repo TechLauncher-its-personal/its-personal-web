@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "element-plus": "^1.1.0-beta.12",
     "express": "^4.17.1",
     "serve-static": "^1.14.1",
     "vue": "^3.0.0",
@@ -23,8 +24,11 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0"
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "1.26.2",
+    "sass-loader": "8.0.2"
   },
   "eslintConfig": {
     "root": true,
@@ -44,5 +48,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "__npminstall_done": false
 }
