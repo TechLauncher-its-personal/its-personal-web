@@ -135,9 +135,18 @@ p{
 
 /* Navbar */
 #navbar {
-    background:#2f9fe3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#2f9fe3;
     color:#fff;
-    overflow: auto;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding:0 30px;
+    transition: 0.5s;
 
 }
 #navbar a{
@@ -168,7 +177,9 @@ p{
 }
 
 #navbar ul li a:hover{
+    background: #45a9e6;
     border-bottom:#eca072 2px solid;
+  
 }
 
 
@@ -176,7 +187,6 @@ p{
 #showcase {
     background: url('../../assets/showcase.jpg') no-repeat center center/cover;
     height: 800px;
-    position:relative;
     
 }
 
@@ -195,6 +205,18 @@ p{
 #showcase .showcase-content p{
     padding-bottom: 20px;
     line-height: 1.7em;
+}
+.showcase::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255 ,255, 0);
+}
+.showcase *{
+    z-index: 10;
 }
 
 /* Features */
@@ -222,5 +244,4 @@ p{
     padding: 20px;
 
 }
-
 </style>
