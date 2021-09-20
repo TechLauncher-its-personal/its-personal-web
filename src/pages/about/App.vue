@@ -1,6 +1,7 @@
 <template>
   <Header/>
   <h1 style="text-align:center; margin-top:100px">#TODO ABOUT US PAGE</h1>
+  <h1 style="text-align:center; margin-top:100px">#TODO CONTACT US PAGE</h1>
   <Footer/>
 </template>
 
