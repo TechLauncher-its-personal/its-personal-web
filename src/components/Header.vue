@@ -6,11 +6,27 @@
            <li><a href="/">Home</a></li>
            <li><a href="about.html">About</a></li>
            <li><a href="https://github.com/TechLauncher-its-personal/Personal-Virtual-Assistant-for-News-Filtering">Docs</a></li>
-           <li><a href="signin.html">Sign in</a></li>
+           <li><a v-on:click="almondLogin()">Sign in</a></li>
          </ul>
        </nav>
     </header>
 </template>
+
+<script>
+export default {
+    methods: {
+    almondLogin: function() {
+      console.log("Login using Almond");
+      const url = "https://almond.stanford.edu/me/api/oauth2/authorize?"
+                    + "response_type=code"
+                    + "&client_id=f79d32042f46485a"
+                    + "&redirect_uri=https://its-personal-web.herokuapp.com/almond_auth"
+                    + "&scope=profile user-read user-read-results user-exec-command developer-read";
+      location.href = url;
+    }
+  }
+}
+</script>
 
 <style>
 /* Reset */

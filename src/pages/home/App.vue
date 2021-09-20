@@ -9,7 +9,7 @@
           <p class="lead">you can achieve news that you interested in and dig out more details through
           communicating with open virtual assistant we design.</p>
           <a class="btn" href="#realchatbox">Try Now</a>
-          <a class="btn" href="signup.html">Sign Up</a>
+          <a class="btn" v-on:click="almondLogin()">Sign Up</a>
         </div>
       </div>
     </div>
@@ -53,6 +53,17 @@ export default {
     Header,
     Footer,
     ChatBox
+  },
+  methods: {
+    almondLogin: function() {
+      console.log("Login using Almond");
+      const url = "https://almond.stanford.edu/me/api/oauth2/authorize?"
+                    + "response_type=code"
+                    + "&client_id=f79d32042f46485a"
+                    + "&redirect_uri=https://its-personal-web.herokuapp.com/almond_auth"
+                    + "&scope=profile user-read user-read-results user-exec-command developer-read";
+      location.href = url;
+    }
   }
 
 //  created() {
