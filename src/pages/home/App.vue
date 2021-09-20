@@ -1,188 +1,56 @@
 <template>
-<header>
-   <nav id="navbar">
-     <h1 class="logo"><a href="index.html">ISS</a></h1>
-     <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="about.html">About</a></li>
-       <li><a href="signin.html">Sign in</a></li>
-     </ul>
-   </nav>
+    <Header/>
 
-   <div id="showcase">
-     <div class="container">
-       <div class="showcase-content">
-         <h1><span class="text-primary">Seeking customize news with</span> </h1>
-         <h2>The Open Virtual Assistant</h2>
-         <p class="lead">you can achieve news that you interested in and dig out more details through
-         communicating with open virtual assistant we design.</p>
-         <a class="btn" href="chatbot.html">Try Now</a>
-         <a class="btn" href="signup.html">Sign Up</a>
-
-       </div>
-     </div>
-
-   </div>
- </header>
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1><span class="text-primary">Seeking customize news with</span> </h1>
+          <h2>The Open Virtual Assistant</h2>
+          <p class="lead">you can achieve news that you interested in and dig out more details through
+          communicating with open virtual assistant we design.</p>
+          <a class="btn" href="chatbot.html">Try Now</a>
+          <a class="btn" href="signup.html">Sign Up</a>
+        </div>
+      </div>
+    </div>
  
- <section id="feature">
-   <div class="box bg-light">
-     <i class="fas fa-envelope-open-text fa-3x"></i>
-     <h3>Contact us</h3>
-     <p>Give your precious feedback</p>
-   </div>
-
-   <div class="box bg-primary">
-     <i class="fas fa-book-reader fa-3x"></i>
-     <h3>Check Documents</h3>
-     <p>Find more resources about virtual personal assistant</p>
-   </div>
-   <div class="box bg-light">
-     <i class="fas fa-tools fa-3x"></i>
-     <h3>Enabled Skills</h3>
-     <p>The skills we used</p>
-   </div>
- </section>
- <div class="clr"></div>
+<section id="feature">
+  <div class="box bg-light">
+    <i class="fas fa-envelope-open-text fa-3x"></i>
+    <h3>Contact us</h3>
+    <p>Give your precious feedback</p>
+  </div>
+  <div class="box bg-primary">
+    <i class="fas fa-book-reader fa-3x"></i>
+    <h3>Check Documents</h3>
+    <p>Find more resources about virtual personal assistant</p>
+  </div>
+  <div class="box bg-light">
+    <i class="fas fa-tools fa-3x"></i>
+    <h3>Enabled Skills</h3>
+    <p>The skills we used</p>
+  </div>
+</section>
 
 
- <footer id="main-footer">
-   <p>Its Personal &copy; 2021, All Rights Reserved</p>
-
- </footer>
-
-
- 
+    <div class="clr"/>
+    <Footer/>
 </template>
 
 <script>
-export default{
-  data(){
+import Header from '../../components/Header.vue'
+import Footer from '../../components/Footer.vue'
 
+export default {
+  name: 'App',
+  components: {
+    Header,
+    Footer
   }
 }
-
-
 </script>
 
 <style>
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Main styling */
-html,body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7em;
-
-}
-
-a {
-    color:#333;
-    text-decoration: none;
-}
-
-h1,h2,h3 {
-    padding-bottom: 20px;
-}
-p{
-    margin: 10px 0;
-}
-
-/*Utility*/
-.container{
-    margin:auto;
-    max-width: 1100px;
-    overflow: auto;
-    padding: 0 20px; 
-
-}
-.text-primary{
-    color:#eca072;
-}
-.lead{
-    font-size: 20px;
-}
-
-.btn{
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-    background: #003366;
-    padding: 13px 20px;
-    margin-right: 50px;
-    border: none;
-}
-.btn:hover{
-    background: #eca072;
-    color: #003366;
-    opacity: 0.9;
-
-}
-.bg-primary{
-    background: #eca072;
-    color: #fff;
-}
-.bg-light{
-    background:#2f9fe3;
-    color:#fff;
-}
-.clr{
-    clear: both;
-}
-
-/* Navbar */
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:#2f9fe3;
-    color:#fff;
-    opacity: 0.8;
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0px;
-    padding:0 30px;
-    transition: 0.5s;
-
-}
-#navbar a{
-    color:#fff;
-
-
-}
-#navbar h1{
-    float:left;
-    padding-top: 20px;
-    padding-left: 20px;
-
-}
-
-#navbar ul{
-    list-style: none;
-    float: right;
-
-}
-#navbar ul li{
-    float: left;
-
-}
-#navbar ul li a{
-    display: block;
-    padding: 20px;
-    text-align: center;
-}
-
-#navbar ul li a:hover{
-    background: #45a9e6;
-    border-bottom:#eca072 2px solid;
-  
-}
-
-
 /* Showcase */
 #showcase {
     background: url('../../assets/showcase.jpg') no-repeat center center/cover;
@@ -234,14 +102,5 @@ p{
 .box bg-light a:hover{
     background:#45a9e6;
     color:#eca072;
-}
-
-/* Footer */
-#main-footer {
-    text-align: center;
-    background: #003366;
-    color: #fff;
-    padding: 20px;
-
 }
 </style>
