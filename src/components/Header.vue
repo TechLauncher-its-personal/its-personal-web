@@ -142,7 +142,6 @@ p{
 }
 
 #navbar ul li a:hover{
-    background: #45a9e6;
     border-bottom:#eca072 2px solid;
 }
 </style>
